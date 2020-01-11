@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>お問い合わせ</title>
+  <style>
+      /*↓共通↓*/
+      body{
+          font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+          color: rgb(77, 77, 77);
+      }
+      .material-icons:hover{
+        opacity: 0.7;
+      }
+      /*フォントレスポンシブ*/
+      @media (min-width: 100px) {
+
+        html {
+                font-size: 10px
+            }
+      }
+      @media (min-width: 768px) {
+
+        html {
+                font-size: 12px
+            }
+      }
+      @media (min-width: 1200px) {
+
+        html {
+                font-size: 16px
+            }
+      }
+      /*↑共通ここまで↑*/
+  </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+        $("#header-outer").load("header.html #header-inner");
+        $("#footer-outer").load("footer.html #footer-inner");
+        });
+       </script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <header>
+            <div id="header-outer"></div>
+        </header>
+       
+        <!--内容記載-->
+        <form action="" method="" class="form-horizontal" style="padding-top: 20px;">
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="name1">お名前</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" name="">
+          </div>
+          </div>
+      
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="name">会社名・事業所名</label>
+          <div class="col-sm-6">
+             <input type="text" class="form-control" name="">
+          </div>
+          </div>
+      
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="email">メールアドレス</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control" name="">
+          </div>
+          </div>
+
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="ask1">お問い合わせ内容</label>
+          <div class="col-sm-6">
+          <textarea rows="7" name="" class="form-control"></textarea>
+          </div>
+          </div>
+      
+          <div class="form-group" style="padding-bottom: 20px;">
+            <label class="col-sm-3"></label>
+          <div class="col-sm-9">
+             <button class="btn btn-secondary">リセット</button>
+             <button class="btn btn-primary" style="margin-left: 20px;">送信する</button>
+          </div>
+          </div>
+          <!--CGIを使うか協議する。その場合はメールアドレスを記載しない等SPAM対策-->
+
+        </form>
+        <footer>
+            <div id="footer-outer"></div>
+        </footer>
+      </div>
+     
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
