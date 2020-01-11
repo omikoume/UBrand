@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>U Brand</title>
+  <style>
+
+      /*↓共通↓*/
+      body{
+          font-family:"Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+          color: rgb(77, 77, 77);
+      }
+      .material-icons:hover{
+        opacity: 0.7;
+      }
+      /*フォントレスポンシブ*/
+      @media (min-width: 100px) {
+
+        html {
+                font-size: 10px
+            }
+      }
+      @media (min-width: 768px) {
+
+        html {
+                font-size: 12px
+            }
+      }
+      @media (min-width: 1200px) {
+
+        html {
+                font-size: 16px
+            }
+      }
+      /*↑共通ここまで↑*/
+
+      /*アイコンレスポンシブ*/
+      @media (min-width: 100px) {
+
+        .icon1,.icon2,.icon3,.icon4 {
+            font-size: 50px
+            }
+      }
+      @media (min-width: 768px) {
+
+        .icon1,.icon2,.icon3,.icon4 {
+            font-size: 100px
+         }
+      }
+      @media (min-width: 1200px) {
+
+        .icon1,.icon2,.icon3,.icon4 {
+            font-size: 150px
+            }
+      }
+      @media (min-width: 100px) {
+
+        .news {
+          height: 100px;
+           }
+      }
+      @media (min-width: 768px) {
+
+        .news {
+          height: 200px;
+           }
+      }
+      @media (min-width: 1200px) {
+
+        .news {
+          height: 250px;
+           }
+      }
+      /*アイコンカラー*/
+      .icon1{
+          color: rgb(1, 150, 219);
+          margin: 10px 0  10px 0;
+      }
+      .icon2{
+          color: rgb(250, 121, 218);
+          margin: 10px 0  10px 0;
+      }
+      .icon3{
+          color: rgb(3, 129, 13);
+          margin: 10px 0  10px 0;
+      }
+      .icon4{
+          color: rgb(0, 99, 247);
+          margin: 10px 0  10px 0;
+      }
+  </style>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(function() {
+        $("#header-outer").load("header.html #header-inner");
+        $("#footer-outer").load("footer.html #footer-inner");
+        });
+       </script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <header>
+            <div id="header-outer"></div>
+        </header>
+        <div class="row main">
+          <div class="col-sm-8 order-sm-0 slide">
+            <div id="carousel-1" class="carousel slide"data-ride="carousel" data-interval="3000">
+                <ol class="carousel-indicators ">
+                  <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-1" data-slide-to="1"></li>
+                  <li data-target="#carousel-1" data-slide-to="2"></li>
+                  <li data-target="#carousel-1" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="development.html"><img class="d-block w-100" src="mpimage/001.png" alt="First slide"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="maintenance.html"><img class="d-block w-100" src="mpimage/002.png" alt="Second slide"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="migration.html"><img class="d-block w-100" src="mpimage/003.png" alt="Third slide"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="webapp.html"><img class="d-block w-100" src="mpimage/004.png" alt="Third slide"></a>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+          </div>
+            <div class="news col-sm-4 order-sm-1 border-secondary " style="overflow-y: scroll; direction: rtl;">
+              <h6 style="padding-top: 10px;">【最新情報】</h6>
+              <!--見づらくなるので適宜改行すること-->
+                <p>新着情報更新欄</p>
+                <p>システム開発導入事例</p>
+                <p>システムメンテナンス作業事例</p>
+                <p>マイグレーション作業実績</p>
+                <p>Webアプリ開発事例<br>
+                  ◆株式会社HB様◆<br>
+                　ホームページの作成依頼を頂きました<br>
+                  集客率アップ、売上アップのお声を頂きました<br>
+                  詳しくはこちら☆リンク</p>
+            </div>
+        </div>
+        <div style="height: auto">
+            <div class="row text-center">
+                <div class="col-sm">
+                    <a href="development.html">
+                        <i class="material-icons icon1">
+                            build
+                        </i>
+                    </a>
+                    <h5>■システム開発</h5>
+                    <p>顧客管理、勤怠管理、<br>不動産管理システム等様々なシステムを<br>
+                        お客様の要望に合わせてカスタム構築致します。<br>
+                        VB.NET, VBA(Excel,Access)<br>
+                        SQL Server,Oracle</p>
+                </div>
+                <div class="col-sm">
+                    <a href="maintenance.html">
+                        <i class="material-icons icon2">
+                            local_hospital
+                        </i>
+                    </a>
+                    <h5>■システムメンテナンス</h5>
+                    <p>弊社作成システムのアフターサビス及び<br>
+                        適宜改修とメンテナンスを致します。<br>
+                        ご要望にお応えして追加機能の作成等も<br>
+                        実施致します。</p>
+                </div>
+                <div class="col-sm">
+                    <a href="migration.html">
+                        <i class="material-icons icon3">
+                            find_replace
+                        </i>
+                    </a>
+                    <h5>■マイグレーション</h5>
+                    <p>Windowsのサポート終了等で古くなった<br>
+                        システム等を最新版に改修及び開発を<br>
+                        サポート致します。</p>
+                </div>
+                <div class="col-sm">
+                    <a href="webapp.html">
+                        <i class="material-icons icon4">
+                            tablet_android
+                        </i>
+                    </a>
+                    <h5>■Webアプリ開発</h5>
+                    <p>ホームページ作成、<br>
+                        Android,iOS　Webアプリ開発等を<br>
+                        サポート致します。</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footer-outer"></div>
+        </footer>
+      </div>
+     
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
